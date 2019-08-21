@@ -6,7 +6,7 @@ WilliamSonoma
 # BACKGROUND
 Sometimes items cannot be shipped to certain zip codes, and the rules for these restrictions are stored as a series of ranges of 5 digit codes. For example if the ranges are:
 
-[94133,94133] [94200,94299] [94600,94699]
+'[94133,94133]' '[94200,94299]' [94600,94699]
 
 Then the item can be shipped to zip code 94199, 94300, and 65532, but cannot be shipped to 94133, 94650, 94230, 94600, or 94299.
 
@@ -22,11 +22,11 @@ Given a collection of 5-digit ZIP code ranges (each range includes both their up
 - Your solution will be evaluated on the correctness and the approach taken, and adherence to coding standards and best practices
 
 # EXAMPLES:
-If the input = [94133,94133] [94200,94299] [94600,94699]
-Then the output should be = [94133,94133] [94200,94299] [94600,94699]
+If the input = '[94133,94133]' '[94200,94299]' '[94600,94699]'
+Then the output should be = '[94133,94133]' '[94200,94299]' '[94600,94699]'
 
-If the input = [94133,94133] [94200,94299] [94226,94399] 
-Then the output should be = [94133,94133] [94200,94399]
+If the input = '[94133,94133]' '[94200,94299]' '[94226,94399]' 
+Then the output should be = '[94133,94133]' '[94200,94399]'
 
 Evaluation Guidelines:
 Your work will be evaluated against the following criteria:
@@ -46,8 +46,10 @@ The steps associated with this solution are as follows.
 ## INSTRUCTIONS
 1. Download and install Java (JDK 1.8) on the test machine.
 2. Download the project (and unzip) and import it as an existing project into eclipse.
-3. Modify ZipRangeUtil.java with needed values(It comes with default values).
-4. Run the ZipOptimizerClient.java
+3. Add the jar files under lib directory to class path.
+4. Add src/main/java, src/main/resources, src/test/java to Source under Java Build Path.
+5. Modify ZipRangeUtil.java with needed values(It comes with default values).
+6. Run the ZipOptimizerClient.java
 
 # TESTS
 1. There are a couple of tests in the test folder.
